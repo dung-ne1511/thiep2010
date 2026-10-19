@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <meta name="description" content="Một tấm thiệp nhỏ gửi mẹ, với tất cả yêu thương.">
+  <title>Gửi Mẹ Yêu ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+  <main class="container">
+    <header class="hero">
+      <div class="flower" aria-hidden="true">🌷</div>
+      <p class="subtitle">Gửi người phụ nữ tuyệt vời nhất của con</p>
+      <h1>Con yêu Mẹ <span>♥</span></h1>
+      <p class="intro">Có những lời yêu thương con chưa nói thành lời... Hôm nay, con muốn dành tặng mẹ một món quà nhỏ.</p>
+    </header>
+
+    <section class="card" aria-label="Thiệp gửi mẹ">
+      <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Mở phong bì" aria-expanded="false">
+        <div class="envelope-back"></div>
+        <article class="letter">
+          <span class="letter-heart" aria-hidden="true">💗</span>
+          <p>Gửi mẹ yêu của con</p>
+          <small>Một lá thư nhỏ, ngàn yêu thương lớn.</small>
+        </article>
+        <div class="envelope-front"></div>
+        <div class="envelope-flap"></div>
+        <div class="heart-seal" aria-hidden="true">♥</div>
+      </div>
+
+      <button id="openBtn" class="primary-btn" type="button">💌 Mở thư của con</button>
+
+      <section class="message" id="message" aria-live="polite" hidden>
+        <h2>Mẹ yêu dấu của con! 💐</h2>
+        <p>Cảm ơn mẹ vì đã sinh ra con, nuôi con khôn lớn và luôn yêu thương con bằng tất cả những gì mẹ có.</p>
+        <p>Con biết rằng có những lúc con vô tâm, bướng bỉnh và khiến mẹ phải lo lắng. Có thể con chưa nói lời cảm ơn đủ nhiều, nhưng con luôn biết ơn vì được làm con của mẹ.</p>
+        <p>Con mong mẹ luôn mạnh khỏe, bình an, mỗi ngày đều có thật nhiều niềm vui và luôn nở nụ cười thật đẹp. Mong những vất vả của mẹ sẽ được đền đáp bằng những tháng ngày hạnh phúc.</p>
+        <p>Sau này dù con có lớn đến đâu, đi xa đến đâu, mẹ vẫn luôn là mái nhà bình yên nhất mà con muốn trở về.</p>
+        <p class="love">Con yêu mẹ nhiều lắm! ❤️</p>
+        <p class="signature">Con của mẹ,<br><strong>Cu Bi yêu dấu hihi 💗</strong></p>
+        <div class="bouquet" aria-hidden="true">💐🌷🌹💐</div>
+      </section>
+
+      <div class="controls">
+        <button id="musicBtn" class="secondary-btn" type="button" aria-pressed="false">🎵 Bật nhạc</button>
+        <p class="music-note" id="musicNote">Muốn thêm nhạc, hãy đặt file MP3 tên <code>music.mp3</code> vào <code>assets/music</code>.</p>
+      </div>
+    </section>
+    <footer><p>Được làm bằng tất cả yêu thương, dành riêng cho mẹ ❤️</p></footer>
+  </main>
+
+  <audio id="music" loop preload="auto" autoplay>
+    <source src="assets/music/music.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
